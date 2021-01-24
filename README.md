@@ -1,12 +1,16 @@
 ## Sign-Up Form
 
-* Created a signu-up form, when you sign in the data gets send to MoongoseDB. 
+* Created a sign-up form, when you sign in - the data gets send to MoongoseDB- database. 
 
 * "signupfront" folder is where the frontend (website) is being coded
-* In that folder is a "signupbackend" folder where the server is - there all the 
+* In that folder is a "signupbackend" folder where the server is that talk to the DATABASE.
 
 
-* Password from MoongoseDb my personal is being stored in .env file where is not seen by everyone
+* Password/Username from MoongoseDb is being stored in .env file where is not seen by everyone.
+
+* Password that the users write are being encrypetd by bcrypt, so they cant be seen in Database either
+
+* I did npt spent anytime doing any CSS-work, since Im just leanring the matter Im more intrested in getting better at Javascript-React at the moment. Thank you for you understanding, there is no css file.
 
 
 
