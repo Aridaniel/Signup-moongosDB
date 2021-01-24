@@ -1,3 +1,19 @@
+## Sign-Up Form
+
+* Created a signu-up form, when you sign in the data gets send to MoongoseDB. 
+
+* "signupfront" folder is where the frontend (website) is being coded
+* In that folder is a "signupbackend" folder where the server is - there all the 
+
+
+* Password from MoongoseDb my personal is being stored in .env file where is not seen by everyone
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
