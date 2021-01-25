@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+//MAke a Schema
 const signUpTemplate = new mongoose.Schema({
     fullName:{
         type:String,

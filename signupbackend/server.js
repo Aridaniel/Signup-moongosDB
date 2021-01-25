@@ -5,8 +5,10 @@ const dotenv = require('dotenv')
 const routesUrls = require('./routes/routes')
 const cors = require('cors')
 
+//For enabling dotenv
 dotenv.config()
 
+//Connecting to monoose database, use DATABASE_ACCESS variable from .env file
 mongoose.connect(process.env.DATABASE_ACCESS, { useUnifiedTopology: true,  useNewUrlParser: true }, () => console.log('Database connected jiiiiii'))
 
 app.use(express.json())

@@ -4,6 +4,7 @@ import axios from 'axios'
 
 
 class App extends Component {
+    //Constructor function that with the state
     constructor(){
         super()
         this.state = {
@@ -65,6 +66,7 @@ class App extends Component {
             })
     }
 
+    //Whate renders to the screen
     render() {
         return (
             <div>
