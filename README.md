@@ -14,7 +14,7 @@
 
 * Password that the users write are being encrypetd by bcrypt, so they cant be seen in Database either
 
-* In the .env_sample file youll need to paste the line from the wwww.io.tskoli.dev I commented, beetwen the quatation-marks.
+* In the .env_sample file youll need to paste the line from the wwww.io.tskoli.dev I commented, beetwen the quotation-marks.
 
 * You will need to npm start both the signupbackend(server) and the signupfront, to get it running.
 
