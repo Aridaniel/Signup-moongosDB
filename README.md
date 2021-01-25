@@ -10,7 +10,7 @@
 *  In the .env_sample file youll need to paste the line from the wwww.io.tskoli.dev I commented, between the quatation-marks.
 
 
-* I did npt spent anytime doing any CSS-work, since Im just leanring the matter Im more intrested in getting better at Javascript-React at the moment. Thank you for your understanding, there is no css file.
+* I did npt spent anytime doing any CSS-work, since Im just learning the matter, Im more intrested in getting better at Javascript-NodeJS-React at the moment. Thank you for your understanding, there is no css file.
 
 * Password that the users write are being encrypetd by bcrypt, so they cant be seen in Database either
 
