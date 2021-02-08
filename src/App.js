@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-//import "bootstrap/dist/css/boostrap.min.css"
+import css from './app.css'
 import axios from 'axios'
 
 
@@ -55,7 +55,7 @@ class App extends Component {
             password: this.state.password
         }
         //Post the data to the 
-        axios.post('http://localhost:4000/app/signup', registered)
+        axios.post('https://signupserver-node-js.herokuapp.com/app/signup', registered)
             .then(response => console.log(response.data))
 
             this.setState({
@@ -69,42 +69,38 @@ class App extends Component {
     //Whate renders to the screen
     render() {
         return (
-            <div>
-                <div className =  'container'>
-                    <div className= 'form-div'>
-                        <form onSubmit={this.onSubmit}>
-                            <input type = 'text'
-                            placeholder = 'Full name'
-                            //onChange- when user types something changes the State- goes from here to changeFullname
-                            onChange ={this.changeFullName}
-                            value = {this.state.fullName}
-                            className ='form-control form-group'
-                            />
+            <div>   
+                    <form className= 'form' onSubmit={this.onSubmit}>
+                        <input type = 'text'
+                        placeholder = 'Full name'
+                        //onChange- when user types something changes the State- goes from here to changeFullname
+                        onChange ={this.changeFullName}
+                        value = {this.state.fullName}
+                        className ='form-control form-group'
+                        />
 
-                            <input type = 'text'
-                            placeholder = 'Username'
-                            onChange ={this.changeUsername}
-                            value = {this.state.username}
-                            className ='form-control form-group'
-                            />
-                            <input type = 'text'
-                            placeholder = 'E-mail'
-                            onChange ={this.changeEmail}
-                            value = {this.state.email}
-                            className ='form-control form-group'
-                            />
-                            <input type = 'password'
-                            placeholder = 'Password'
-                            onChange ={this.changePassword}
-                            value = {this.state.password}
-                            className ='form-control form-group'
-                            />
+                        <input type = 'text'
+                        placeholder = 'Username'
+                        onChange ={this.changeUsername}
+                        value = {this.state.username}
+                        className ='form-control form-group'
+                        />
+                        <input type = 'text'
+                        placeholder = 'E-mail'
+                        onChange ={this.changeEmail}
+                        value = {this.state.email}
+                        className ='form-control form-group'
+                        />
+                        <input type = 'password'
+                        placeholder = 'Password'
+                        onChange ={this.changePassword}
+                        value = {this.state.password}
+                        className ='form-control form-group'
+                        />
 
-                            <input type= 'submit' className= 'btn btn-danger btn-block' value= 'Submit' />
-                            
-                        </form>
-                    </div>
-                </div>
+                        <input type= 'submit' className= 'btn btn-danger btn-block' value= 'Submit' />
+                        
+                    </form>           
             </div>
         );
     
